@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss'
+const plugin = require("tailwindcss/plugin")
 
+/** @type {import('tailwindcss').Config} */
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,7 +16,6 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
-  },
-  plugins: [],
+  }
 }
 export default config
